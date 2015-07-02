@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I0F-AC-V5R">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,127 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIt-2O-hQs">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.1569213867" green="0.52370548250000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="grS-Hb-Lxh"/>
+                                    <constraint firstAttribute="height" constant="200" id="xXS-sg-fjv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="60"/>
+                                <state key="normal" title="Yup" backgroundImage="nope.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="grS-Hb-Lxh"/>
+                                        <exclude reference="xXS-sg-fjv"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="grS-Hb-Lxh"/>
+                                        <include reference="xXS-sg-fjv"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onYupTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KUj-b0-dbz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXA-X0-HZp">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.15692138671875" green="0.52370548248291016" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="AFj-3E-lBp"/>
+                                    <constraint firstAttribute="height" constant="200" id="n9f-L5-Iqc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="60"/>
+                                <state key="normal" title="Nope" backgroundImage="yup.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="AFj-3E-lBp"/>
+                                        <exclude reference="n9f-L5-Iqc"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="AFj-3E-lBp"/>
+                                        <include reference="n9f-L5-Iqc"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="onNopeTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="22r-Pp-vpW"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="bIt-2O-hQs" secondAttribute="centerX" id="0I0-Kg-Fhx"/>
+                            <constraint firstItem="mXA-X0-HZp" firstAttribute="top" secondItem="bIt-2O-hQs" secondAttribute="bottom" constant="32" id="Nqn-6S-jGs"/>
+                            <constraint firstAttribute="centerX" secondItem="mXA-X0-HZp" secondAttribute="centerX" id="VnL-yt-iUz"/>
+                            <constraint firstItem="bIt-2O-hQs" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="32" id="tau-lX-4rB"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="bIt-2O-hQs"/>
+                                <exclude reference="mXA-X0-HZp"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0I0-Kg-Fhx"/>
+                                <exclude reference="tau-lX-4rB"/>
+                                <exclude reference="Nqn-6S-jGs"/>
+                                <exclude reference="VnL-yt-iUz"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="bIt-2O-hQs"/>
+                                <include reference="mXA-X0-HZp"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0I0-Kg-Fhx"/>
+                                <include reference="tau-lX-4rB"/>
+                                <include reference="Nqn-6S-jGs"/>
+                                <include reference="VnL-yt-iUz"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="yk3-pd-ijD"/>
+                    <connections>
+                        <outlet property="nopeButton" destination="mXA-X0-HZp" id="aRy-gj-KHi"/>
+                        <outlet property="yupButton" destination="mXA-X0-HZp" id="0eR-tl-cbf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1230" y="357"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Elc-rh-6fg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I0F-AC-V5R" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dYY-Y2-UUL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="aQV-sr-MeQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DiI-Hs-CKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="511.5" y="357"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nope.png" width="700" height="700"/>
+        <image name="yup.png" width="626" height="690"/>
+    </resources>
 </document>

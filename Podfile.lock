@@ -1,0 +1,10 @@
+PODS:
+  - SAMSoundEffect (0.1.0)
+
+DEPENDENCIES:
+  - SAMSoundEffect
+
+SPEC CHECKSUMS:
+  SAMSoundEffect: d09dec216800496975944dbcf717c8e1278dd607
+
+COCOAPODS: 0.37.2

@@ -1,0 +1,6 @@
+framework module Pods_NopeYup {
+  umbrella header "Pods-NopeYup-umbrella.h"
+
+  export *
+  module * { export * }
+}

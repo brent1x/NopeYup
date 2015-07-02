@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "SAMSoundEffect.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *nopeButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *yupButton;
 
 @end
 
@@ -16,12 +20,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor yellowColor];
+    self.navigationItem.title = @"Nope? Yup!";
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)onNopeTapped:(id)sender {
+    SAMSoundEffect *nope = [SAMSoundEffect soundEffectNamed:@"NOPE.aiff"];
+    [nope play];
+}
+
+- (IBAction)onYupTapped:(id)sender {
+    SAMSoundEffect *yup = [SAMSoundEffect soundEffectNamed:@"YUP.aiff"];
+    [yup play];
 }
 
 @end

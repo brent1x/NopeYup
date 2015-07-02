@@ -1,0 +1,6 @@
+framework module SAMSoundEffect {
+  umbrella header "Pods-NopeYup-SAMSoundEffect-umbrella.h"
+
+  export *
+  module * { export * }
+}

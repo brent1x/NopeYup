@@ -1,0 +1,1 @@
+../../../SAMSoundEffect/SAMSoundEffect/SAMSoundEffect.h
